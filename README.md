@@ -1,2 +1,24 @@
 # facts2future
-play repo for FACTS redesign
+sandbox repo for FACTS redesign
+
+## separation of functionality ideas:
+
+### library packages
+- `facts-manager` : this is infrastructure to set up experiments. How modules string together. could also call this `facts` (or `facts2`). this has a way to register module packages developed by others?
+  - this is where either radical entk is used or not
+  - puts together an **experiment** made up of *Steps* (climate, sea-level componenents, integration, then extreme sea level) run sequentially.
+    - Each *Step* is composed of one or more *modules* run in parallel.
+      - Each *module* is made up of a *pipeline*
+        - Each *pipeline* is made up of *stages* (preprocess, fit, project, postprocess)
+          - Each *stage* is made up of individual *tasks* run sequentially  
+  
+- `facts-lib` : this is the SDK. provides functionality for users to write modules to be used within facts
+    - e.g. functions for the duplicate code found in facts v1
+    - classes from which to extend for new module development
+ 
+### application packages
+- `facts-core` (new name please) : installs `facts-manager` plus a couple "core" modules (like, `directsample`, `fair` ? what else?). this is like the example that others should build their applications from.
+  Other options for application packages
+- `facts-epa` --> this is like `dscim-facts-epa` with facts v1.1.2
+- `facts-ar6` --> this would be a setup for replicating the AR6 report
+- `facts-newzealand` --> this would be a setup for the New Zealand users
