@@ -17,7 +17,7 @@ sandbox repo for FACTS redesign
     - classes from which to extend for new module development
  
 ### application packages
-- `facts-core` (new name please) : installs `facts-manager` plus a couple "core" modules (like, `directsample`, `fair` ? what else?). this is like the example that others should build their applications from.
+- `facts-core` (new name please. how about `facts-app`) : installs `facts-manager` plus a couple "core" modules (like, `directsample`, `fair` ? what else?). this is like the example that others should build their applications from.
   Other options for application packages
 - `facts-epa` --> this is like `dscim-facts-epa` with facts v1.1.2
 - `facts-ar6` --> this would be a setup for replicating the AR6 report
