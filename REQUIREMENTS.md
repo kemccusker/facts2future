@@ -43,13 +43,13 @@ For now, duplicating the top of a draft requirements doc stored elsewhere.
 ## NON-FUNCTIONAL REQUIREMENTS
 ### PERFORMANCE
 1. Automated performance tracking of FACTS modules in the following key areas
-    1. TTE
-    2. CPU Usage
-    3. Data Throughput
+    1. TTE ?
+    2. CPU Usage ?
+    3. Data Throughput ?
 2. Must have a stable run environment and working set of experiments
 
 ### SECURITY
-    n/a
+  n/a
 ### RESILIENCE/FAULT-TOLERANCE
 1. Provide meaningful error messages at all layers of a FACTS run
 2. Stop experiment (?) run once an critical error occurs
